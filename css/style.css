@@ -92,7 +92,6 @@ https://en.bem.info/methodology/quick-start/*/
 
 .title__bio {
    color: #464646;
-   font-weight: 700;
    font-size: 52px;
 }
 
@@ -136,7 +135,6 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .about__title {
-   font-weight: 700;
    font-size: 32px;
    color: #464646;
 }
@@ -158,7 +156,6 @@ https://en.bem.info/methodology/quick-start/*/
 .skills__title,
 .hobbies__title {
    color: #464646;
-   font-weight: 700;
    font-size: 32px;
    text-align: center;
 }
@@ -191,13 +188,57 @@ https://en.bem.info/methodology/quick-start/*/
 
 .skills__name,
 .hobbies__name {
-   font-weight: 700;
    font-size: 16px;
 }
 
 /* Experiencia Académica*/
 
-section.academic {}
+.academic {
+   background-color: #EAF2FD;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+}
+
+.academic__title {
+   font-size: 32px;
+   color: #464646;
+   text-align: center;
+}
+
+.academic__courses {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.academic__courses__box {
+   display: flex;
+   align-items: center;
+
+}
+
+.academic__courses__list{
+   padding: .5rem;
+}
+
+.academic__courses__item__img {
+   background-color: #ffffff;
+   padding: 5rem 5.6rem;
+}
+
+.academic__courses__item__title {
+   font-size: 22px;
+   color: #464646;
+}
+
+.academic__courses__item__subtitle {
+   font-size: 16px;
+   line-height: 19px;
+   color: #464646;
+}
 
 /* experiencia*/
 
