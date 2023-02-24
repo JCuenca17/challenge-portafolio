@@ -31,6 +31,11 @@ a {
    color: var(--cor-de-link);
 }
 
+h4,
+p {
+   margin: 0;
+}
+
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
 
 Lo que es el BEM?
@@ -47,6 +52,28 @@ https://en.bem.info/methodology/quick-start/*/
 .container {
    padding-left: calc((100% - 1150px)/2);
    padding-right: calc((100% - 1150px)/2);
+}
+
+.buttonwhite {
+   background: #F5F5F5;
+   display: inline-block;
+   cursor: pointer;
+   color: #2A7AE4;
+   font-weight: 400;
+   font-size: 16px;
+   padding: 16px 16px;
+   border: 1px solid #2A7AE4;
+}
+
+.buttonblue {
+   background: #2A7AE4;
+   display: inline-block;
+   cursor: pointer;
+   color: #ffffff;
+   font-weight: 400;
+   font-size: 16px;
+   padding: 16px 16px;
+   border: 1px solid #2A7AE4;
 }
 
 .menu {
@@ -220,7 +247,7 @@ https://en.bem.info/methodology/quick-start/*/
 
 }
 
-.academic__courses__list{
+.academic__courses__list {
    padding: .5rem;
 }
 
@@ -232,17 +259,66 @@ https://en.bem.info/methodology/quick-start/*/
 .academic__courses__item__title {
    font-size: 22px;
    color: #464646;
+   padding-top: .5rem;
 }
 
 .academic__courses__item__subtitle {
    font-size: 16px;
    line-height: 19px;
    color: #464646;
+   padding-top: .5rem;
 }
 
 /* experiencia*/
 
-section.experience {}
+.experience {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 3rem;
+}
+
+.experience__section__title {
+   font-size: 32px;
+   color: #464646;
+}
+
+.experiencie__box {
+   display: flex;
+   flex-direction: row;
+   padding-bottom: 3rem;
+   max-width: 1136px;
+   width: 100%;
+}
+
+.experience__img{
+   order: 0;
+}
+
+.experience__info, .experience__info-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   order: 1;
+   padding: 1rem;
+}
+
+.experience__info-container{
+   order: -1;
+}
+
+.experience__title {
+   font-size: 22px;
+   color: #464646;
+   margin: .5rem;
+}
+
+.experience__text {
+   font-weight: 500;
+   font-size: 16px;
+   color: #464646;
+   margin: .5rem;
+}
 
 /*Contacto*/
 
