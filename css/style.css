@@ -90,6 +90,10 @@ https://en.bem.info/methodology/quick-start/*/
    align-items: center;
 }
 
+.menu__title{
+   padding: 9px;
+}
+
 .menu__list {
    display: flex;
    align-items: center;
@@ -372,7 +376,7 @@ https://en.bem.info/methodology/quick-start/*/
 .formcontato__input {
    width: 656px;
    height: 56px;
-   margin: 32px 32px 0 0;
+   margin: 16px 16px 0 0;
    border: transparent;
    border-radius: 4px;
 }
@@ -380,7 +384,7 @@ https://en.bem.info/methodology/quick-start/*/
 .formcontato__textarea {
    width: 656px;
    height: 133px;
-   margin: 32px 32px 0 0;
+   margin: 16px 16px 0 0;
    border: transparent;
    border-radius: 4px;
 }
@@ -392,7 +396,14 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*footeer*/
 
-.footer {}
+.footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   text-align: center;
+}
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
