@@ -61,7 +61,7 @@ https://en.bem.info/methodology/quick-start/*/
    color: #2A7AE4;
    font-weight: 400;
    font-size: 16px;
-   padding: 16px 16px;
+   padding: 16px;
    border: 1px solid #2A7AE4;
 }
 
@@ -72,7 +72,7 @@ https://en.bem.info/methodology/quick-start/*/
    color: #ffffff;
    font-weight: 400;
    font-size: 16px;
-   padding: 16px 16px;
+   padding: 16px;
    border: 1px solid #2A7AE4;
 }
 
@@ -164,11 +164,14 @@ https://en.bem.info/methodology/quick-start/*/
 .about__title {
    font-size: 32px;
    color: #464646;
+   margin-bottom: 1.5rem;
 }
 
 .about__paragraph {
+   padding-bottom: 1.5rem;
    padding-right: 25rem;
    color: #464646;
+   line-height: 19px;
 }
 
 /*Sección Skills*/
@@ -275,7 +278,6 @@ https://en.bem.info/methodology/quick-start/*/
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding-bottom: 3rem;
 }
 
 .experience__section__title {
@@ -291,11 +293,12 @@ https://en.bem.info/methodology/quick-start/*/
    width: 100%;
 }
 
-.experience__img{
+.experience__img {
    order: 0;
 }
 
-.experience__info, .experience__info-container {
+.experience__info,
+.experience__info-container {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -303,7 +306,7 @@ https://en.bem.info/methodology/quick-start/*/
    padding: 1rem;
 }
 
-.experience__info-container{
+.experience__info-container {
    order: -1;
 }
 
@@ -322,11 +325,74 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Contacto*/
 
-section.formcontato {}
+.formcontato {
+   background-color: #EAF2FD;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+}
+
+.formcontato__contacto {
+   display: flex;
+   flex-direction: row;
+   max-width: 1136px;
+   width: 100%;
+}
+
+.formcontato--esquerda {
+   order: 0;
+}
+
+.formcontato__text {
+   order: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 1rem;
+}
+
+.formcontato__title {
+   font-size: 32px;
+   color: #464646;
+   margin-bottom: .5rem;
+}
+
+.formcontato__subtext {
+   font-weight: 500;
+   font-size: 16px;
+   color: #464646;
+   margin-top: .5rem;
+   margin-bottom: .1rem;
+}
+
+.formcontato__form {
+   display: flex;
+   flex-direction: column;
+}
+
+.formcontato__input {
+   width: 656px;
+   height: 56px;
+   margin: 32px 32px 0 0;
+   border: transparent;
+   border-radius: 4px;
+}
+
+.formcontato__textarea {
+   width: 656px;
+   height: 133px;
+   margin: 32px 32px 0 0;
+   border: transparent;
+   border-radius: 4px;
+}
+
+.formcontato__botao {
+   width: fit-content;
+   margin-top: 32px;
+}
 
 /*footeer*/
 
-section.footer {}
+.footer {}
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
